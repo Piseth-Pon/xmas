@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: darkcyan;
+  color: whitesmoke;
+}
+
+.banner {
+  height: 500px;
+
+  background-image: url('images/banner-3.jpeg');
+  background-position: center;
+  background-size: cover;
+
+  /* animation: slideshow 20s infinite; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* @keyframes slideshow {
+  0% {
+    background-image: url("./images/banner-1.jpeg");
+  }
+  25% {
+    background-image: url("./images/banner-2.jpeg");
+  }
+  50% {
+    background-image: url("./images/banner-3.jpeg");
+  }
+  75% {
+    background-image: url("./images/banner-4.jpeg");
+  }
+  100% {
+    background-image: url("./images/banner-1.jpeg");
+  }
+} */
+
+.intro {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+
+  transition: all 0.5s;
+
+  /* display: flex;
+  flex-direction: column;
+  gap: 25px; */
+}
+
+.intro:hover {
+  background-color: brown;
+}
+
+.intro h1 {
+  font-size: 64px;
+  color: whitesmoke;
+  letter-spacing: 4px;
+  text-shadow: 0 0 5px whitesmoke;
+}
+
+.intro h2 {
+  font-size: 32px;
+  color: lightgrey;
+}
+
+.intro h3 {
+  font-size: 28px;
+  color: lightcyan;
+}
+
+
+
+/* Product Cards */
+
+#card {
+  padding: 15px;
+}
+
+#card h2 {
+  text-align: center;
+}
+
+.card-group {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  width: 45%;
+  height: 300px;
+  border: 4px solid white;
+  box-shadow: 10px 10px 2px brown;
+
+  transition: all 0.5s;
+
+  display: flex;
+  gap: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 24px;
+}
+
+.card h4 {
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.card-thumbnail {
+  width: 50%;
+  height: 100%;
+}
+
+.card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: center; */
+}
+
+.card-description {
+  padding: 15px;
+  width: 50%;
+  /* height: 100%; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 16px;
+  padding: 5px;
+  font-weight: bold;
+  background-color: brown;
+  color: whitesmoke;
+}
+
+
+
+/* 
+table {
+  width: 90%;
+  margin: 10px auto;
+  background-color: lightslategray;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  border: 4px solid white;
+  height: 100px;
+  font-size: 32px;
+  background-color: brown;
+  color: white;
+  text-transform: uppercase;
+}
+
+td {
+  border: 4px solid white;
+  font-size: 24px;
+}
+
+
+table img {
+  height: 200px;
+  width: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  display: block;
+  margin: 10px auto;
+} */
+
+.contact-info {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+input, textarea {
+  display: inline-block;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.contact-form {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact {
+  padding: 25px;
+
+  display: flex;
+  gap: 15px;
+}
+
+
+
+.contact-form .btn {
+  width: 100px;
+  align-self: flex-end;
+}
+
+.footer {
+  padding: 25px;
+  background-color: lightslategray;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
